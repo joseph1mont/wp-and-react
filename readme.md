@@ -1,0 +1,1 @@
+This is a Wordpress theme contain Categories as component using ReactJS
