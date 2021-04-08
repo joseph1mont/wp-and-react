@@ -1,0 +1,78 @@
+.site-header{
+  position: relative; 
+  height: $header-height;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -$buttom__bar--height;
+        width: 100%;
+        height: $buttom__bar--height;
+        background: $color-primary;
+        background: linear-gradient(to right, $color-primary 0%, $button-bar3 40%, $color-secondary 100%);
+    }
+}
+
+.navbar {
+    display: inline-block;
+    padding: 0;
+    height: $header-height;
+    margin: 0 0 0 9vw;
+
+    &-right {
+        float: right;
+
+        & a {
+            height: $header-height;
+            padding: 0 3rem;
+        }
+
+        &__member {
+            display: inline-block;
+            vertical-align: middle;
+            background-color: $color-buttons;
+            color: $color-white;
+        }
+    }
+
+    & .menu-item {
+        padding: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &-toggler {
+        margin: 2rem;
+    }
+}
+
+.navbar-brand {
+    background-color: $color-secondary;
+    padding: 0 3rem;
+
+    &__logo {
+        width: $header-height;
+        height: $header-height;
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width : 991px) {
+    .navbar {
+        float: right;
+
+        &-right {
+            display: none;
+        }
+        &-collapse {
+            background: $color-white;
+            width: 20vw;
+            z-index: 1000;
+        }
+
+        &-nav {
+            height: 100vh;
+        }
+    }
+}
+

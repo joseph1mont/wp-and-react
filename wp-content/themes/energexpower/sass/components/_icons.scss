@@ -1,0 +1,16 @@
+.social {
+    text-align: center;
+
+    &__item {
+    display: inline-block;
+    }
+}
+
+.fa {
+    display: inline-block;
+    background: $color-primary;
+    color: $color-white;
+    font-size: 2rem;
+    width: 2rem;
+    margin: 0.7rem;
+}

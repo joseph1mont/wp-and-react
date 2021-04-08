@@ -1,0 +1,41 @@
+.banner {
+    position: relative;
+    background-position:center !important;background-repeat:no-repeat !important;background-size:cover!important;
+    height:80vh;
+    z-index: -1;
+
+    &__text {
+        font-size: 7.5rem;
+        position: absolute;
+        bottom: 15%;
+        left: 55%;
+        color: $color-white;     
+    }
+
+    @media screen and (max-width: 575px) {
+
+        &__text {
+            font-size: 3.4rem;
+        }
+        }
+}
+
+section.section-home {
+    margin: 5rem auto;
+    text-align: center;
+
+    & p {
+        font-size: 1.2rem;;
+    }
+}
+
+.categories__heading {
+    margin: 7rem auto 5rem;
+}
+
+.category__content {
+    text-align: center;
+    padding: 50px;
+    background: $color-secondary;
+    margin: 0.2rem -1.3rem;
+}
